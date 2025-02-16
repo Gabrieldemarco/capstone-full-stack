@@ -29,8 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://pedroprepele-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.'
-    'cognitiveclass.ai/',
+    'https://pedroprepele-8000.theianext-1-labs-prod-misc-tools-us-east-0.'
+    'proxy.cognitiveclass.ai/',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
