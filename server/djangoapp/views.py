@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 
+
 @csrf_exempt
 def login_user(request):
     data = json.loads(request.body)
@@ -119,3 +120,4 @@ def add_review(request):
             return JsonResponse({"status": 401, "message": f"Error in posting review: {str(e)}"})
     
     return JsonResponse({"status": 403, "message": "Unauthorized"})
+
