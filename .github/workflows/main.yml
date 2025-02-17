@@ -25,8 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8
 
-      - name: Run Linter
-        run: find . -name "*.py" -exec flake8 {} +
+      - name: Run Python Linter
+        run: |
+          # Run the flake8 linter on all Python files
+          find . -name "*.py" -exec flake8 {} +
 
   lint_js:
     name: Lint JavaScript Files
@@ -42,7 +44,11 @@ jobs:
           node-version: 14
 
       - name: Install JSHint
-        run: npm install --global jshint
+        run: |
+          # Ensure npm is up-to-date and install jshint globally
+          npm install --global jshint
 
-      - name: Run Linter
-        run: find . -name "*.js" -exec jshint {} +
+      - name: Run JavaScript Linter
+        run: |
+          # Run the jshint linter on all JavaScript files
+          find . -name "*.js" -exec jshint {} +
