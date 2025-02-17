@@ -9,5 +9,8 @@
   "predef": [
     "JSX"
   ],
-  "strict": "global"
+  "strict": "global",
+  "asi": true,
+  "laxbreak": true
 }
+
