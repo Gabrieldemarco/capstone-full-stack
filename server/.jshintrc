@@ -5,5 +5,9 @@
   "globals": {
     "React": true,
     "ReactDOM": true
-  }
+  },
+  "predef": [
+    "JSX"
+  ],
+  "strict": "global"
 }
